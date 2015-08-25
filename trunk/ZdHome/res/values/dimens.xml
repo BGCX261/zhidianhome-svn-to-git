@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="list_section_width">30.0dip</dimen>
+    <dimen name="home_custom_button_large_horizontal_padding">40.0dip</dimen>
+    <dimen name="home_custom_button_width">145.0dip</dimen>
+    <dimen name="home_custom_button_height">40.0dip</dimen>
+    <dimen name="custom_button_height">38.0dip</dimen>
+    <dimen name="custom_button_text_size">13.0dip</dimen>
+    <dimen name="custom_button_vertical_padding">0.0dip</dimen>
+    <dimen name="custom_button_horizontal_padding">8.0dip</dimen>
+    <dimen name="nav_toolbar_height">45.0dip</dimen>
+    <dimen name="popup_toolbar_height">40.0dip</dimen>
+    <dimen name="popup_toolbar_width">310.0dip</dimen>
+    <dimen name="popup_toolbar_button_height">40.0dip</dimen>
+    <dimen name="popup_toolbar_button_width">40.0dip</dimen>
+    <dimen name="popup_toolbar_button_height_maw">40.0dip</dimen>
+    <dimen name="popup_toolbar_button_width_maw">40.0dip</dimen>
+    <dimen name="media_text_width">80.0dip</dimen>
+    <dimen name="av_10key_spacing">3.0dip</dimen>
+    <dimen name="av_10key_spacing_land">5.0dip</dimen>
+    <dimen name="av_10key_size">48.0dip</dimen>
+    <dimen name="av_10key_size_land">48.0dip</dimen>
+    <dimen name="av_text_size">14.0dip</dimen>
+    <dimen name="av_image_text_size">10.0dip</dimen>
+    <dimen name="comfort_button_temperature_top_margin">17.0dip</dimen>
+    <dimen name="comfort_button_temperature_text_size">22.0dip</dimen>
+    <dimen name="comfort_button_scale_text_size">8.0dip</dimen>
+    <dimen name="comfort_button_scale_right_margin">2.0dip</dimen>
+    <dimen name="comfort_list_temperature_top_margin">10.0dip</dimen>
+    <dimen name="comfort_list_temperature_text_size">18.0dip</dimen>
+    <dimen name="comfort_list_scale_text_size">8.0dip</dimen>
+    <dimen name="comfort_list_scale_right_margin">3.0dip</dimen>
+    <dimen name="ipod_av_button_size">40.0dip</dimen>
+    <dimen name="home_lr_padding">5.0dip</dimen>
+    <dimen name="home_tb_padding">30.0dip</dimen>
+    <dimen name="home_tb_padding_xlarge">120.0dip</dimen>
+</resources>

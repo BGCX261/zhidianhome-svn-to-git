@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zd.home"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:theme="@android:style/Theme.Black.NoTitleBar" 
+        android:name=".ZDApplication"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" >
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LightsActivity" >
+        </activity>
+        <activity android:name=".SecurityActivity" >
+        </activity>
+        <activity android:name=".EnvironmentActivity" >
+        </activity>
+        <activity android:name=".WatchActivity" >
+        </activity>
+          <activity android:name=".ui.WelcomeActivity" />
+        <activity android:name=".MusicActivity" >
+        </activity>
+        <activity android:name=".ui.ContactDevicesActivity" >
+        </activity>
+           <activity android:name=".ui.DeviceListActivity" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+</manifest>

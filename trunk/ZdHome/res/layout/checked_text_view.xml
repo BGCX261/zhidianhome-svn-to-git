@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/GreyListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:checkMark="@drawable/indicator_check_mark_light"
+    android:gravity="center_vertical"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip"
+    android:textAppearance="@style/GreyListItemText" />

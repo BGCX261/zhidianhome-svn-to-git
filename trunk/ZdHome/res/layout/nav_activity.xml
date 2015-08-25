@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/nav_layout" android:animationCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/nav_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/nav_toolbar_height" android:weightSum="3.0">
+        <FrameLayout android:background="@drawable/nav_framework_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@+id/nav_home" android:src="@drawable/nav_home_button" android:scaleType="centerInside" android:onClick="onNavHomeClicked" style="@style/ToolbarButton.Nav" />
+                <ImageView android:id="@+id/nav_back" android:src="@drawable/nav_back_button" android:scaleType="centerInside" android:onClick="onNavBackClicked" style="@style/ToolbarButton.Nav" />
+            </LinearLayout>
+            <com.zd.home.ui.AutoResizeTextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/demo" android:paddingLeft="0.0dip" android:visibility="invisible" android:layout_width="105.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/demo" android:maxLines="1" />
+        </FrameLayout>
+        <FrameLayout android:id="@+id/room_button" android:background="@drawable/nav_room_button" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="onRoomClicked">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/room_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediumText.Bold" />
+        </FrameLayout>
+        <LinearLayout android:gravity="right" android:background="@drawable/nav_framework_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/nav_lights" android:background="@drawable/nav_lights_button" android:onClick="onLightsClicked" style="@style/ToolbarButton.Nav" />
+            <ImageView android:id="@+id/nav_volume" android:background="@drawable/nav_volume_button" android:onClick="onShowVolumeClicked" style="@style/ToolbarButton.Nav" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@+id/volume_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/popup_toolbar_height" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentLeft="false" android:layout_alignParentTop="true" android:layout_alignParentRight="false" android:layout_centerHorizontal="true" layout="@layout/toolbar_volume" />
+    <RelativeLayout android:id="@+id/zones_toolbar" android:background="@drawable/nav_framework_tab_prtrt" android:layout_width="fill_parent" android:layout_height="@dimen/nav_toolbar_height" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/nav_zones" android:background="@drawable/zones_button" android:layout_alignParentRight="true" android:onClick="onZonesClicked" style="@style/ToolbarButton.Nav" />
+        <include android:id="@+id/media_toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/popup_toolbar_height" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_centerInParent="true" layout="@layout/toolbar_media" />
+    </RelativeLayout>
+</RelativeLayout>

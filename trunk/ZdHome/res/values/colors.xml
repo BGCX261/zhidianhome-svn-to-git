@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="generic_text_color_default">#ffffffff</color>
+    <color name="generic_text_color_disabled">#ff888888</color>
+    <color name="light_on_text_color">#ffffffff</color>
+    <color name="home_text_color_default">#ffffffff</color>
+    <color name="home_text_color_disabled">#ff888888</color>
+    <color name="device_name_text_color_default">#4effffff</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="charcoal">#ff262524</color>
+    <color name="header_color">#ff000000</color>
+    <color name="tab_unselected">#ffffffff</color>
+    <color name="GreyListSubItemTextColor">#ffcccccc</color>
+    <color name="zone_background">#99000000</color>
+</resources>

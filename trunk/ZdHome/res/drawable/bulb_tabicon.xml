@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector android:dither="true" android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/tabico_bulb_select" />
+    <item android:drawable="@drawable/tabico_bulb" />
+</selector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="screensaver_times">
+        <item>After 30 seconds</item>
+        <item>After 1 minute</item>
+        <item>After 2 minutes</item>
+        <item>After 5 minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="search_by_options">
+        <item>By Artist</item>
+        <item>By Album</item>
+        <item>By Track</item>
+        <item>By Keyword</item>
+        <item>By Composer</item>
+    </string-array>
+</resources>

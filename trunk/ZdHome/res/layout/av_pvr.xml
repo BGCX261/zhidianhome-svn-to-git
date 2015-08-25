@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bkg_device_lists" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@+id/av_pvr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/av_pvr" android:drawableTop="@drawable/av_dvr_button" android:onClick="onPvrClicked" style="@style/AvImageButton" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/av_play" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_play_button" android:layout_weight="1.0" android:onClick="onPlayClicked" />
+            <ImageView android:id="@+id/av_stop" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_stop_button" android:layout_weight="1.0" android:onClick="onStopClicked" />
+            <ImageView android:id="@+id/av_rewind" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_rewind_button" android:layout_weight="1.0" android:onClick="onRewindClicked" />
+            <ImageView android:id="@+id/av_trackback" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_trackback_button" android:layout_weight="1.0" android:onClick="onTrackBackClicked" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/av_pause" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_pause_button" android:layout_weight="1.0" android:onClick="onPauseClicked" />
+            <ImageView android:id="@+id/av_record" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_record_button" android:layout_weight="1.0" android:onClick="onRecordClicked" />
+            <ImageView android:id="@+id/av_fastforward" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_fastforward_button" android:layout_weight="1.0" android:onClick="onFastForwardClicked" />
+            <ImageView android:id="@+id/av_trackforward" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_ctrls_trackforward_button" android:layout_weight="1.0" android:onClick="onTrackForwardClicked" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bkg_device_lists" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/av_10key_spacing">
+                <Button android:id="@+id/av_prev" android:layout_marginRight="5.0dip" android:text="@string/av_prev" android:drawableTop="@drawable/av_prev_button" android:onClick="onPrevClicked" style="@style/AvImageButton" />
+                <Button android:id="@+id/av_info" android:text="@string/av_info" android:drawableTop="@drawable/av_info_button" android:onClick="onInfoClicked" style="@style/AvImageButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/av_guide" android:layout_marginRight="5.0dip" android:text="@string/av_guide" android:drawableTop="@drawable/av_guide_button" android:onClick="onGuideClicked" style="@style/AvImageButton" />
+                <Button android:id="@+id/av_input" android:text="@string/av_input" android:drawableTop="@drawable/av_input_button" android:onClick="onInputClicked" style="@style/AvImageButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/av_10key_spacing">
+                <Button android:id="@+id/av_menu" android:layout_marginRight="5.0dip" android:text="@string/av_menu" android:drawableTop="@drawable/av_menu_button" android:onClick="onMenuClicked" style="@style/AvImageButton" />
+                <Button android:id="@+id/av_dvr" android:text="@string/av_dvr" android:drawableTop="@drawable/av_dvr_button" android:onClick="onPvrClicked" style="@style/AvImageButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/av_cc" android:layout_marginRight="5.0dip" android:text="@string/av_cc" android:drawableTop="@drawable/av_cc_button" android:onClick="onCcClicked" style="@style/AvImageButton" />
+                <Button android:id="@+id/av_cancel" android:text="@string/av_cancel" android:drawableTop="@drawable/av_cancel_button" android:onClick="onCancelClicked" style="@style/AvImageButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/av_numpad" />
+</LinearLayout>

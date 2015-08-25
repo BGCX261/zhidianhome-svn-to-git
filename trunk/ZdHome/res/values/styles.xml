@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="EllipsizeEndText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="HomeButtonText">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MediumText" parent="@style/EllipsizeEndText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="MediumText.Bold" parent="@style/MediumText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="LargeText" parent="@style/EllipsizeEndText">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="LargeText.Bold" parent="@style/LargeText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="XLargeText" parent="@style/EllipsizeEndText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="XLargeText.Bold" parent="@style/XLargeText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SectionLayout">
+        <item name="android:layout_width">@dimen/list_section_width</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="SectionText" parent="@style/MediumText.Bold">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff999999</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">@dimen/list_section_width</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="CurrentSectionText" parent="@style/XLargeText.Bold">
+        <item name="android:textSize">60.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ff101010</item>
+    </style>
+    <style name="TemperatureText">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="TemperatureText.Small" parent="@style/TemperatureText">
+        <item name="android:textSize">9.0dip</item>
+    </style>
+    <style name="GeneralText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="GenericButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="GenericButton.Camera" parent="@style/GenericButton">
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="GenericButton.AutoFocus" parent="@style/GenericButton">
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="HomeCustomButton">
+        <item name="android:textSize">@dimen/custom_button_text_size</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/home_custom_button_width</item>
+        <item name="android:layout_height">@dimen/home_custom_button_height</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="HomeCustomButton.Left" parent="@style/HomeCustomButton">
+        <item name="android:paddingLeft">@dimen/custom_button_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/home_custom_button_large_horizontal_padding</item>
+    </style>
+    <style name="HomeCustomButton.Right" parent="@style/HomeCustomButton">
+        <item name="android:paddingLeft">@dimen/home_custom_button_large_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/custom_button_horizontal_padding</item>
+    </style>
+    <style name="CustomButtonText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="CustomButton">
+        <item name="android:textSize">@dimen/custom_button_text_size</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:paddingLeft">@dimen/custom_button_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/custom_button_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/custom_button_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/custom_button_vertical_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/custom_button_height</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="GenericButton.Large" parent="@style/GenericButton">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="GenericToggleButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="GenericToggleButton.Small" parent="@style/GenericToggleButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="RhapsodyMusicToggleButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_button_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rhapsody_toggle_button</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="TemperatureButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TemperatureButton.Icon" parent="@style/TemperatureButton">
+        <item name="android:gravity">left|center</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="TemperatureButton.Icon.Toggle" parent="@style/TemperatureButton.Icon">
+        <item name="android:button">@drawable/transparent</item>
+    </style>
+    <style name="SecurityButton" parent="@style/EllipsizeEndText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_10key_blank</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="GreyList">
+        <item name="android:padding">0.0dip</item>
+        <item name="android:listSelector">@drawable/list_item_selector</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+    <style name="GreyListItem">
+        <item name="android:padding">4.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="GreyListItemText" parent="@style/EllipsizeEndText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="GreyListItemText2Line">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:minLines">2</item>
+    </style>
+    <style name="GreyListSubItemText" parent="@style/GreyListItemText">
+        <item name="android:textColor">@color/GreyListSubItemTextColor</item>
+    </style>
+    <style name="FocusableGreyList" parent="@style/GreyList">
+        <item name="android:listSelector">@drawable/list_item_selector_focusable</item>
+    </style>
+    <style name="ToolbarButton">
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="ToolbarButton.Nav" parent="@style/ToolbarButton">
+        <item name="android:layout_width">@dimen/nav_toolbar_height</item>
+        <item name="android:layout_height">@dimen/nav_toolbar_height</item>
+    </style>
+    <style name="ToolbarButton.Nav.Landscape" parent="@style/ToolbarButton.Nav">
+        <item name="android:layout_width">52.0dip</item>
+    </style>
+    <style name="ToolbarButton.Popup" parent="@style/ToolbarButton">
+        <item name="android:layout_width">@dimen/popup_toolbar_button_height</item>
+        <item name="android:layout_height">@dimen/popup_toolbar_button_width</item>
+    </style>
+    <style name="ToolbarButton.Maw" parent="@style/ToolbarButton">
+        <item name="android:layout_width">@dimen/popup_toolbar_button_height_maw</item>
+        <item name="android:layout_height">@dimen/popup_toolbar_button_width_maw</item>
+    </style>
+    <style name="MediaText" parent="@style/EllipsizeEndText">
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="MediaText.Song" parent="@style/MediaText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MediaText.Artist" parent="@style/MediaText">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="TstatModeButton" />
+    <style name="AvTenKeyBase">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AvTenKeyButton" parent="@style/AvTenKeyBase">
+        <item name="android:background">@drawable/ten_key_blank_button</item>
+    </style>
+    <style name="AvTenKeyImageView" parent="@style/AvTenKeyBase">
+        <item name="android:src">@drawable/ten_key_blank_button</item>
+    </style>
+    <style name="AvMiscButton">
+        <item name="android:textSize">@dimen/av_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AvImageButton">
+        <item name="android:textSize">@dimen/av_image_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+    <style name="MyMusic.Artist" parent="@style/MediaText.Artist" />
+    <style name="DeviceNameText">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="ZoneRoomText" parent="@style/LargeText.Bold" />
+    <style name="ZoneMediaInfoText" parent="@style/MediumText" />
+    <style name="ZoneVolumeText" parent="@style/MediumText.Bold" />
+    <style name="PopDownAnimation">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+    <style name="PopUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="Setpoint">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+    </style>
+    <style name="Setpoint.Type" parent="@style/Setpoint">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="Setpoint.Temp" parent="@style/Setpoint">
+        <item name="android:textSize">32.0sp</item>
+    </style>
+    <style name="Setpoint.Scale" parent="@style/Setpoint">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+    </style>
+    <style name="SetpointButton">
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+    </style>
+    <style name="SetpointButton.Up" parent="@style/SetpointButton">
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <style name="SetpointButton.Down" parent="@style/SetpointButton">
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="ComfortButtonTemperature">
+        <item name="android:textSize">@dimen/comfort_button_temperature_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:layout_marginTop">@dimen/comfort_button_temperature_top_margin</item>
+        <item name="android:text">--°</item>
+    </style>
+    <style name="ComfortButtonScale">
+        <item name="android:textSize">@dimen/comfort_button_scale_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:layout_marginRight">@dimen/comfort_button_scale_right_margin</item>
+        <item name="android:text">F</item>
+    </style>
+    <style name="ComfortListTemperature">
+        <item name="android:textSize">@dimen/comfort_list_temperature_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:layout_marginTop">@dimen/comfort_list_temperature_top_margin</item>
+        <item name="android:text">--°</item>
+    </style>
+    <style name="ComfortListScale">
+        <item name="android:textSize">@dimen/comfort_list_scale_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/generic_text_color_default</item>
+        <item name="android:layout_marginRight">@dimen/comfort_list_scale_right_margin</item>
+        <item name="android:text">F</item>
+    </style>
+      <style name="myStyle" parent="@android:style/Widget" />
+   <style name="myStyle.WhiteSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.WhiteNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.WhiteBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.WhiteHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.WhiteContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.WhiteSuperHugeText" parent="@style/myStyle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="myStyle.BlackSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.BlackNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.BlackBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.BlackHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.BlackSuperHugeText" parent="@style/myStyle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.BlackContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.GraySmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.GrayNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.GrayBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.GrayHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.GraySuperHugeText" parent="@style/myStyle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.GrayContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff7f8081</item>
+    </style>
+    <style name="myStyle.DeepGraySmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="myStyle.DeepGrayNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="myStyle.DeepGrayBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="myStyle.DeepGrayHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="myStyle.DeepGraySuperHugeText" parent="@style/myStyle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="myStyle.DeepGrayContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.OrangeSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.OrangeNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.OrangeBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.OrangeHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.OrangeContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.OrangeSuperHugeText" parent="@style/myStyle">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">#fff7941d</item>
+    </style>
+    <style name="myStyle.BlueSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff0da6df</item>
+    </style>
+    <style name="myStyle.BlueNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff0da6df</item>
+    </style>
+    <style name="myStyle.BlueBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff0da6df</item>
+    </style>
+    <style name="myStyle.BlueHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff0da6df</item>
+    </style>
+    <style name="myStyle.BlueContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff0da6df</item>
+    </style>
+    <style name="myStyle.RedSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="myStyle.RedNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="myStyle.RedBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="myStyle.RedHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="myStyle.RedContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffff0000</item>
+    </style>
+    <style name="myStyle.GreenSmallText" parent="@style/myStyle">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff1dc6a8</item>
+    </style>
+    <style name="myStyle.GreenNormalText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff1dc6a8</item>
+    </style>
+    <style name="myStyle.GreenBigText" parent="@style/myStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff1dc6a8</item>
+    </style>
+    <style name="myStyle.GreenHugeText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff1dc6a8</item>
+    </style>
+    <style name="myStyle.GreenContentTitleText" parent="@style/myStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff1dc6a8</item>
+    </style>
+    <style name="myStyle.CustomDayText" parent="@style/myStyle">
+        <item name="android:textSize">28.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="myStyle.UsercenterBigText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff636466</item>
+    </style>
+    <style name="myStyle.TTSBigText" parent="@style/myStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ff636466</item>
+    </style>
+    <style name="myStyle.PanelHandleText" parent="@style/myStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff747474</item>
+    </style>
+    <style name="title_left_button_style">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/title_left_button</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+    </style>
+    <style name="title_right_button_style">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/title_right_button</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+         <style name="TitleBackground_Major">
+        <item name="android:background">@drawable/major_header_bg</item>
+    </style>
+    <style name="TitleBackground_Secondary">
+        <item name="android:background">@drawable/secondary_header_bg</item>
+    </style>
+     <style name="titleMajor" parent="@android:style/Theme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">66.0px</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TitleBackground_Major</item>
+    </style>
+    <style name="titleSecondary" parent="@android:style/Theme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">45.0px</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TitleBackground_Secondary</item>
+    </style>
+</resources>

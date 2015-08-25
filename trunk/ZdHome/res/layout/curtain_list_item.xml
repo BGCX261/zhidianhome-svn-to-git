@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:background="@drawable/light_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+     <ImageButton
+        android:id="@+id/stopBtn"
+        android:layout_width="53.0dip"
+        android:layout_toRightOf="@+id/device_name"
+        android:layout_height="53.0dip"
+        android:layout_centerVertical="true"
+        android:layout_margin="8.0dip"
+        android:background="@drawable/lt_button"
+        android:src="@drawable/light_bulb" />
+
+    <ImageButton
+        android:id="@+id/openBtn"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_centerVertical="true"
+        android:layout_margin="8.0dip"
+        android:layout_toRightOf="@+id/stopBtn"
+        android:src="@drawable/motors_drapes_open" 
+        android:background="@drawable/lt_button"/>
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="53.0dip"
+        android:layout_height="53.0dip"
+        android:layout_toRightOf="@+id/openBtn"
+        android:layout_centerVertical="true"
+        android:layout_margin="8.0dip"
+        android:src="@drawable/motors_drapes_close" 
+        android:background="@drawable/lt_button" />
+    <ImageView android:id="@+id/percentage_separator" android:background="@drawable/bkg_light_div" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="2.0dip" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_toLeftOf="@+id/percentage" android:layout_alignTop="@+id/percentage" android:layout_alignBottom="@+id/percentage" />
+     <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_toLeftOf="@+id/room"
+        android:layout_toRightOf="@+id/power"
+        android:ellipsize="end"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:text="Device Name"
+        android:textColor="@color/list_item_text"
+        android:textStyle="bold" />
+</RelativeLayout>

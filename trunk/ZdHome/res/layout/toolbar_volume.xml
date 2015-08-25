@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/popup_toolbar_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bkg_volume_flex" >
+
+    <ImageView
+        android:id="@+id/power"
+        style="@style/ToolbarButton.Popup"
+        android:layout_alignParentLeft="true"
+        android:onClick="onPowerClicked"
+        android:src="@drawable/md_power_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/power"
+        android:hapticFeedbackEnabled="false"
+        android:src="@drawable/bkg_media_div" />
+
+    <ImageView
+        android:id="@+id/mute"
+        style="@style/ToolbarButton.Popup"
+        android:layout_toRightOf="@+id/power"
+        android:src="@drawable/md_mute_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/mute"
+        android:hapticFeedbackEnabled="false"
+        android:src="@drawable/bkg_media_div" />
+
+    <TextView
+        android:id="@+id/volume"
+        style="@style/MediumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:maxWidth="140.0dip"
+        android:text="100%" />
+
+    <ImageView
+        android:id="@+id/volume_down"
+        style="@style/ToolbarButton.Popup"
+        android:layout_toRightOf="@+id/mute"
+        android:src="@drawable/md_volumedown_button" />
+
+    <ImageView
+        android:id="@+id/volume_up"
+        style="@style/ToolbarButton.Popup"
+        android:layout_toLeftOf="@+id/zones"
+        android:src="@drawable/md_volumeup_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/volume_up"
+        android:hapticFeedbackEnabled="false"
+        android:src="@drawable/bkg_media_div" />
+
+    <ImageView
+        android:id="@+id/zones"
+        style="@style/ToolbarButton.Popup"
+        android:layout_toLeftOf="@+id/close"
+        android:onClick="onZonesClicked"
+        android:src="@drawable/md_zones_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/zones"
+        android:hapticFeedbackEnabled="false"
+        android:src="@drawable/bkg_media_div" />
+
+    <ImageView
+        android:id="@+id/close"
+        style="@style/ToolbarButton.Popup"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/md_close_button" />
+
+</RelativeLayout>

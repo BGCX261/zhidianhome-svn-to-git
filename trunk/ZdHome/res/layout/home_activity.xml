@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/relativeLayout2" android:background="@drawable/bkg_tstat_temp"
+     android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/music_toolbar" android:layout_below="@+id/nav_toolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/logo" android:background="@drawable/cop_cntr_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:id="@+id/top_row" android:paddingBottom="@dimen/home_tb_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/logo" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@+id/watch" android:background="@drawable/watch_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:onClick="onWatchClicked">
+            <TextView android:layout_gravity="bottom|center" android:id="@+id/watch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/watch" style="@style/HomeButtonText" />
+        </FrameLayout>
+        <FrameLayout android:id="@+id/listen" android:background="@drawable/listen_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:onClick="onListenClicked">
+            <TextView android:layout_gravity="bottom|center" android:id="@+id/listen_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/listen" style="@style/HomeButtonText" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/security" android:background="@drawable/security_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="@dimen/home_lr_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onSecurityClicked">
+        <TextView android:layout_gravity="bottom|center" android:id="@+id/security_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_marginBottom="3.0dip" android:text="@string/security" android:maxLines="1" style="@style/HomeButtonText" />
+    </FrameLayout>
+    <FrameLayout android:id="@+id/lights" android:background="@drawable/lights_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginRight="@dimen/home_lr_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onLightsClicked">
+        <TextView android:layout_gravity="bottom|center" android:id="@+id/lights_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/lighting" style="@style/HomeButtonText" />
+    </FrameLayout>
+    <LinearLayout android:id="@+id/bottom_row" android:paddingTop="@dimen/home_tb_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/logo" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@+id/comfort" android:background="@drawable/comfort_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:onClick="onComfortClicked">
+            <TextView android:layout_gravity="bottom|center" android:id="@+id/comfort_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/comfort" android:maxLines="1" style="@style/HomeButtonText" />
+            <RelativeLayout android:gravity="top|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@+id/temperature_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ComfortButtonTemperature" />
+                <TextView android:id="@+id/temperature_text_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/temperature_text" android:layout_alignRight="@+id/temperature_text" style="@style/ComfortButtonScale" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/more" android:background="@drawable/more_button" android:clickable="true" android:layout_width="100.0dip" android:layout_height="100.0dip" android:onClick="onMoreClicked">
+            <TextView android:layout_gravity="bottom|center" android:id="@+id/more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/more" style="@style/HomeButtonText" />
+        </FrameLayout>
+    </LinearLayout>
+    <Button android:id="@+id/top_left_button" android:background="@drawable/custom_tl_button" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/HomeCustomButton.Left" />
+    <Button android:id="@+id/top_right_button" android:background="@drawable/custom_tr_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/HomeCustomButton.Right" />
+    <Button android:id="@+id/bottom_left_button" android:background="@drawable/custom_bl_button" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/HomeCustomButton.Left" />
+    <Button android:id="@+id/bottom_right_button" android:background="@drawable/custom_br_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/HomeCustomButton.Right" />
+    <TextView android:id="@+id/media_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@+id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

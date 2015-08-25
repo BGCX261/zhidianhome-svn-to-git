@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GreyListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="120.0dip" android:layout_height="90.0dip" android:layout_margin="10.0dip">
+        <ImageView android:layout_gravity="center" android:id="@+id/thumbnail" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="TextView" style="@style/GreyListItemText" />
+</LinearLayout>

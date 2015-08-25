@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/clever_controls_color" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/welcome_msg" style="@style/MediumText.Bold" />
+    </LinearLayout>
+    <ScrollView android:id="@+id/welcome_body_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbarFadeDuration="2000">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:layout_gravity="center_vertical" android:id="@+id/welcome_video_button" android:background="@drawable/welcome_video_button" android:layout_width="85.0dip" android:layout_height="85.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/welcome_video_title" style="@style/LargeText.Bold" />
+                    <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/generic_text_color_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_video_msg" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:layout_gravity="center_vertical" android:id="@+id/welcome_config_button" android:background="@drawable/welcome_config_button" android:layout_width="85.0dip" android:layout_height="85.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/welcome_config_title" style="@style/LargeText.Bold" />
+                    <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/generic_text_color_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_config_msg" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:layout_gravity="center_vertical" android:id="@+id/welcome_test_button" android:background="@drawable/welcome_test_button" android:layout_width="85.0dip" android:layout_height="85.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/welcome_test_title" style="@style/LargeText.Bold" />
+                    <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/generic_text_color_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_test_msg" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <Button android:layout_gravity="center_vertical" android:id="@+id/welcome_like_button" android:background="@drawable/welcome_like_button" android:layout_width="85.0dip" android:layout_height="85.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/welcome_like_title" style="@style/LargeText.Bold" />
+                    <ImageView android:background="@drawable/welcome_large_div" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/generic_text_color_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_like_msg" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

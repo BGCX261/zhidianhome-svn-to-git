@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@android:id/tabcontent" android:background="@drawable/bkg_device_lists" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ListView android:id="@+id/lights_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" style="@style/GreyList" />
+                <ListView android:id="@+id/lighting_scenes_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" style="@style/GreyList" />
+                <ListView android:id="@+id/all_lights_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" style="@style/GreyList" />
+                <ListView android:id="@+id/all_lighting_scenes_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" style="@style/GreyList" />
+            </FrameLayout>
+            <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+    </TabHost>
+</FrameLayout>
